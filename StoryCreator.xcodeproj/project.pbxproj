@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4BDE6189240D6B13008106A9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE6188240D6B13008106A9 /* main.cpp */; };
 		4BDE6194240D6C0E008106A9 /* output.txt in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE6193240D6C0E008106A9 /* output.txt */; };
-		4BDE6197240D7ED8008106A9 /* Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE6195240D7ED8008106A9 /* Word.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,6 @@
 		4BDE6185240D6B13008106A9 /* StoryCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StoryCreator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDE6188240D6B13008106A9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4BDE6193240D6C0E008106A9 /* output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
-		4BDE6195240D7ED8008106A9 /* Word.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Word.cpp; sourceTree = "<group>"; };
 		4BDE6196240D7ED8008106A9 /* Word.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Word.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +94,6 @@
 		4BDE6192240D6BEC008106A9 /* WordTypes */ = {
 			isa = PBXGroup;
 			children = (
-				4BDE6195240D7ED8008106A9 /* Word.cpp */,
 				4BDE6196240D7ED8008106A9 /* Word.hpp */,
 			);
 			path = WordTypes;
@@ -159,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDE6197240D7ED8008106A9 /* Word.cpp in Sources */,
 				4BDE6194240D6C0E008106A9 /* output.txt in Sources */,
 				4BDE6189240D6B13008106A9 /* main.cpp in Sources */,
 			);
