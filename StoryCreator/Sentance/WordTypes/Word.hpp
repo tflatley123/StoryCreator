@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+// this is the basic structure for words
 enum WordType
 {
     noun,
