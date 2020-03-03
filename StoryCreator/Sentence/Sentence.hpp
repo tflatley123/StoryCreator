@@ -1,15 +1,15 @@
 //  Created by Tom Flatley on 3/2/20.
 
 /*
-  Each sentance will have a subject, a structure, a type. It should be related to the last sentance.
+  Each sentence will have a subject, a structure, a type. It should be related to the last sentence.
  */
-#ifndef Sentance_hpp
-#define Sentance_hpp
+#ifndef Sentence_hpp
+#define Sentence_hpp
 
 #include <stdio.h>
 #include "Word.hpp"
 
-enum SentanceType
+enum SentenceType
 {                   // Example
     Declarative,    // The dog barks.
     Interogative,   // Did the dog bark?
@@ -17,7 +17,7 @@ enum SentanceType
     Exclamatory     // Please tell the dog to stop barking.
 };
 
-enum SentanceStructure
+enum SentenceStructure
 {                       // Example:
     Simple,             // The dog barks. (1 indepentdent)
     Compound,           // The dog barks, while the bird chirps. (2 + independent)
@@ -27,14 +27,14 @@ enum SentanceStructure
 };
 
 
-class Sentance
+class Sentence
 {
 public:
-    Sentance(); // an empty constructor
-    Sentance(SentanceType type, SentanceStructure structure, Word subject); // a constructor taking the sentance type and structure
+    Sentence(); // an empty constructor
+    Sentence(SentenceType type, SentenceStructure structure, Word subject); // a constructor taking the sentence type and structure
     Word subject;
-    SentanceType type;
-    SentanceStructure structure;
+    SentenceType type;
+    SentenceStructure structure;
     
     void print();
     
@@ -46,4 +46,4 @@ private:
 };
 
 
-#endif /* Sentance_hpp */
+#endif /* Sentence_hpp */
