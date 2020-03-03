@@ -11,6 +11,7 @@
 		4B1BF832240DD5F4007F7527 /* Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B1BF830240DD5F4007F7527 /* Reader.cpp */; };
 		4B1BF836240DE090007F7527 /* StoryAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B1BF834240DE090007F7527 /* StoryAccess.cpp */; };
 		4B1BF839240DE09F007F7527 /* DictionaryAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B1BF837240DE09F007F7527 /* DictionaryAccess.cpp */; };
+		4B1BF83F240E97D7007F7527 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B1BF83D240E97D7007F7527 /* Data.cpp */; };
 		4BDE6189240D6B13008106A9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE6188240D6B13008106A9 /* main.cpp */; };
 		4BDE6194240D6C0E008106A9 /* output.txt in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE6193240D6C0E008106A9 /* output.txt */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,10 @@
 		4B1BF837240DE09F007F7527 /* DictionaryAccess.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DictionaryAccess.cpp; sourceTree = "<group>"; };
 		4B1BF838240DE09F007F7527 /* DictionaryAccess.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DictionaryAccess.hpp; sourceTree = "<group>"; };
 		4B1BF83B240DE0F7007F7527 /* Tense.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tense.hpp; sourceTree = "<group>"; };
+		4B1BF83D240E97D7007F7527 /* Data.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		4B1BF83E240E97D7007F7527 /* Data.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
+		4B1BF842240E9A08007F7527 /* libcurl.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.4.tbd; path = usr/lib/libcurl.4.tbd; sourceTree = SDKROOT; };
+		4B1BF843240E9A39007F7527 /* libcurl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcurl.tbd; path = usr/lib/libcurl.tbd; sourceTree = SDKROOT; };
 		4BDE6185240D6B13008106A9 /* StoryCreator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StoryCreator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDE6188240D6B13008106A9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4BDE6193240D6C0E008106A9 /* output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
@@ -65,11 +70,21 @@
 			path = "Web Access";
 			sourceTree = "<group>";
 		};
+		4B1BF840240E9A01007F7527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B1BF843240E9A39007F7527 /* libcurl.tbd */,
+				4B1BF842240E9A08007F7527 /* libcurl.4.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BDE617C240D6B13008106A9 = {
 			isa = PBXGroup;
 			children = (
 				4BDE6187240D6B13008106A9 /* StoryCreator */,
 				4BDE6186240D6B13008106A9 /* Products */,
+				4B1BF840240E9A01007F7527 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +103,8 @@
 				4BDE6191240D6BE0008106A9 /* StoryData */,
 				4BDE6190240D6BD8008106A9 /* Sentence */,
 				4BDE6188240D6B13008106A9 /* main.cpp */,
+				4B1BF83D240E97D7007F7527 /* Data.cpp */,
+				4B1BF83E240E97D7007F7527 /* Data.hpp */,
 				4BDE6193240D6C0E008106A9 /* output.txt */,
 			);
 			path = StoryCreator;
@@ -172,6 +189,7 @@
 			files = (
 				4BDE6194240D6C0E008106A9 /* output.txt in Sources */,
 				4B1BF836240DE090007F7527 /* StoryAccess.cpp in Sources */,
+				4B1BF83F240E97D7007F7527 /* Data.cpp in Sources */,
 				4BDE6189240D6B13008106A9 /* main.cpp in Sources */,
 				4B1BF839240DE09F007F7527 /* DictionaryAccess.cpp in Sources */,
 				4B1BF832240DD5F4007F7527 /* Reader.cpp in Sources */,
