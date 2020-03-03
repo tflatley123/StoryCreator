@@ -1,4 +1,8 @@
 //  Created by Tom Flatley on 3/2/20.
+
+/*
+  Each sentance will have a subject, a structure, a type. It should be related to the last sentance.
+ */
 #ifndef Sentance_hpp
 #define Sentance_hpp
 
@@ -26,13 +30,16 @@ enum SentanceStructure
 class Sentance
 {
 public:
-    Sentance();                                // an empty constructor
-    Sentance(SentanceType, SentanceStructure); // a constructor taking the sentance type and structure
-    
+    Sentance(); // an empty constructor
+    Sentance(SentanceType type, SentanceStructure structure, Word subject); // a constructor taking the sentance type and structure
+    Word subject;
     SentanceType type;
     SentanceStructure structure;
     
+    void print();
+    
 private:
+    void generate();
     
     Word* _words;
     
